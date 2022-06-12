@@ -1,0 +1,23 @@
+# SPDX-FileCopyrightText: 2022 SAP SE or an SAP affiliate company and CLA-assistant contributors
+#
+# SPDX-License-Identifier: Apache-2.0
+
+.DS_Store
+node_modules
+src/bower
+output
+venv
+.env
+report
+npm-debug.log
+test
+coverage
+src/client/dist
+.sass-cache
+.cfenv
+*.log
+log
+log.*
+jsconfig.json
+src/tests/acceptance_tests/codecept.conf.js
+launch.json
