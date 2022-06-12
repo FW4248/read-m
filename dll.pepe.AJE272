@@ -1,0 +1,156 @@
+ ### [
+https://join.skype.com/invite/uxu2seSKJymm](https://github.com/caolan/async) from 3.2.1 to 3.2.2.
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a href="https://github.com/caolan/async/blob/master/CHANGELOG.md">async's changelog</a>.</em></p>
+<blockquote>
+<h1>v3.2.2</h1>
+<ul>
+<li>Fix potential prototype pollution exploit</li>
+</ul>
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/caolan/async/commit/acc084e6916a86e02ac5de8dbda0517e33106bf5"><code>acc084e</code></a> Version 3.2.2</li>
+<li><a href="https://github.com/caolan/async/commit/acd731602c16b22e1e171bb2fe73c0617f4f07c4"><code>acd7316</code></a> Update built files</li>
+<li><a href="https://github.com/caolan/async/commit/b50d64827c6c3b11c74d30d2b5d8445f8c3fdffe"><code>b50d648</code></a> update changelog for 3.2.2</li>
+<li><a href="https://github.com/caolan/async/commit/e1ecdbf79264f9ab488c7799f4c76996d5dca66d"><code>e1ecdbf</code></a> Fix prototype pollution vulnerability</li>
+<li><a href="https://github.com/caolan/async/commit/fc9ba651341af5ab974aade6b1640e345912be83"><code>fc9ba65</code></a> Fix(docs): use plural <code>callbacks</code> word in <code>lib/map.js</code> (<a href="https://github-redirect.dependabot.com/caolan/async/issues/1765">#1765</a>)</li>
+<li><a href="https://github.com/caolan/async/commit/b1b69b03b35022c6c9dfb8f4b9c1ace8f1baf5be"><code>b1b69b0</code></a> regen docs</li>
+<li><a href="https://github.com/caolan/async/commit/cac52e3978ad4675fb37995076a6331117bd99af"><code>cac52e3</code></a> update changelog</li>
+<li>See full diff in <a href="https://github.com/caolan/async/compare/v3.2.1...v3.2.2">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=async&package-manager=npm_and_yarn&previous-version=3.2.1&new-version=3.2.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/FW4248/cla-assistant/network/alerts).
+
+</details>
+<---------    P!îJ¬arÁçи,J»Ya³ª\fµˮ÷¹,p/ñ¥kùd%.j±Ûoú§îq½:(³­Ó�4bË
+Üª~trtúøäü	lpepeÝái£sPkËõA<n>                                                                  P!îJ¬arÁçи,J»Ya³ª\fµˮ÷¹,p/ñ¥kùd%.j±Ûoú§îq½:(³­Ó�4bË
+Üª~trtúøäü	lpepeÝái£sPkËõAnP!îJ¬arÁçи,J»Ya³ª\fµˮ÷¹,p/ñ¥kùd%.j±Ûoú§îq½:(³­Ó�4bË
+Üª~trtúøäü	lpepeÝái£sPkËõAnP!îJ¬arÁçи,J»Ya³ª\fµˮ÷¹,p/ñ¥kùd%.j±Ûoú§îq½:(³­Ó�4bË
+Üª~trtúøäü	lpepeÝái£sPkËõAnP!îJ¬arÁçи,J»Ya³ª\fµˮ÷¹,p/ñ¥kùd%.j±Ûoú§îq½:(³­Ó�4bË
+Üª~trtúøäü	lpepeÝái£sPkËõAnP!îJ¬arÁçи,J»Ya³ª\fµˮ÷¹,p/ñ¥kùd%.j±Ûoú§îq½:(³­Ó�4bË
+Üª~trtúøäü	lpepeÝái£sPkËõAn</n>
+xref
+0 66
+0000000000 65535 f in ef pepe
+0000013592 00000 n 
+0000013813 00000 n 
+0000013637 00000 n 
+0000012138 00000 n 
+0000000721 00000 n 
+0000013878 00000 n 
+0000013942 00000 n 
+0000014014 00000 n 
+0000014317 00000 n 
+0000015391 00000 n 
+0000018718 00000 n 
+0000084304 00000 n 
+0000149936 00000 n 
+0000215568 00000 n 
+0000281200 00000 n 
+0000346718 00000 n 
+0000368754 00000 n 
+0000368867 00000 n 
+0000369369 00000 n 
+0000369454 00000 n 
+0000369932 00000 n 
+0000373652 00000 n 
+0000374034 00000 n 
+0000374386 00000 n 
+0000376466 00000 n 
+0000376865 00000 n 
+0000376949 00000 n 
+0000377307 00000 n 
+0000379602 00000 n 
+0000379888 00000 n 
+0000380161 00000 n 
+0000399925 00000 n 
+0000399996 00000 n 
+0000400028 00000 n 
+0000000015 00000 n 
+0000400113 00000 n 
+0000400162 00000 n 
+0000012938 00000 n 
+0000012590 00000 n 
+0000400675 00000 n 
+0000401003 00000 n 
+0000401183 00000 n 
+0000401371 00000 n 
+0000691876 00000 n 
+0000013302 00000 n 
+0000013078 00000 n 
+0000694536 00000 n 
+0000694632 00000 n 
+0000694839 00000 n 
+0000695100 00000 n 
+0000695280 00000 n 
+0000695468 00000 n 
+0001728573 00000 n 
+0001731233 00000 n 
+0001731439 00000 n 
+0001731666 00000 n 
+0001731869 00000 n 
+0001732078 00000 n 
+0001732287 00000 n 
+0001732491 00000 n 
+0001732697 00000 n 
+0001732900 00000 n 
+0001733109 00000 n 
+0001733316 00000 n 
+0001733525 00000 n 
+trailer
+<</ID [<37a0fbf0c924dfa1f6b85fae95f37e2
+
+13qßü# : 01àÇP
+
+13qßü# : 02àÇP
+
+13qßü# : 03àÇP
+
+13qßü# : 04àÇP
+
+
+
+
+
+
+
+
+
+
+6><37a0fbf0c924dfa1f6b85fae95f37e26>]/Info 3 0 8Q0R/Root 1 0 R/Size 66>>
+%67df9-6f974-7826c-b49bf-7.1.7 for .NET
+startxref
+1733729
+%%EOF
+-------->
