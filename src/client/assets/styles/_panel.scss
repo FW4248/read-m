@@ -1,0 +1,26 @@
+.card.inverse {
+  border: 0;
+  margin-bottom: 0;
+
+  .card-heading {
+    background: $gray-darker;
+    border-bottom: 0;
+    color: #fff;
+  }
+
+  .card-body {
+    border-bottom: 10px solid #fff;
+  }
+}
+
+.card.comment {
+  word-break: break-all;
+
+  .card-heading {
+    background: $gray-light;
+  }
+
+  .card-body {
+    background: #fff;
+  }
+}

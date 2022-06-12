@@ -1,0 +1,69 @@
+<app-frame>
+	<div class="row main" style="margin-top: 70px;">
+		<div class="container-fluid">
+
+			<div class="row m-x-auto content-block" *ngIf="noLinkedItemError">
+				<h1>Error</h1>
+				<p id='error-header'>There is no CLA to sign for {{fullRepoName}}</p>
+				<p id='error-reason'>({{noLinkedItemError}})</p>
+			</div>
+
+			<form id='cla-form' class="row content-block" *ngIf="!redirect && !noLinkedItemError"  (submit)="agree($event)">
+				<div class="col-md-8 offset-md-2" >
+					<div id="cla-header">
+						<h4 *ngIf="!signed">Please sign the CLA for {{fullRepoName}}</h4>
+						<h4 *ngIf="signed">You have signed the CLA for {{fullRepoName}}</h4>
+					</div>
+					<div class="cla-box card card-block">
+						<div [innerHtml]="claText"></div>
+					</div>
+
+					<div *ngIf="hasCustomFields">
+						<p class="text-xs-center">
+							<button id='button-sign-in' type='button' *ngIf="!signed && claText && !isUserSignedIn()" class="btn btn-info sign-btn"  (click)="signIn()">Sign in with GitHub to agree</button>
+						</p>
+						<div *ngIf="isUserSignedIn()">
+							<custom-field
+								class="form-group"
+								*ngFor="let key of customKeys"
+								[name]="key"
+								[data]="customFields[key]"
+								[disabled]="signed"
+								[value]="customValues[key]"
+								(valueChange)="onChange(key, $event)"
+								>
+							</custom-field>
+						</div>
+					</div>
+
+					<p class="text-xs-center" *ngIf="!signed && claText">
+						<button 
+							id='button-agree-cla' 
+							class="btn btn-info sign-btn" 
+							*ngIf="hasCustomFields && isUserSignedIn()" 
+							[disabled]="!customFieldsValid"
+							type="submit" >
+							I agree
+						</button>
+						<button 
+							id='button-sign-in-and-agree'
+							class="btn btn-info sign-btn" 
+							*ngIf="!hasCustomFields"
+							type="submit" >
+							Sign in with GitHub to agree
+						</button>
+					</p>
+				</div>
+			</form>
+
+			<div class="row m-x-auto content-block" *ngIf="signed && redirect">
+				<h3 id="thank-you-text">Thank you {{loggedInUser.login}}</h3>
+				<h4>for signing the CLA!</h4>
+				<br>
+				<h4>we are now taking you back to GitHub</h4>
+				<!--<p ng-repeat="n in [1,2,3]" class="fa fa-circle dots" ng-class="'counter'+n"></p>-->
+			</div>
+
+		</div>
+	</div>
+</app-frame>

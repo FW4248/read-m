@@ -1,0 +1,55 @@
+<div class="row linked-clas-list-heading settings">
+  <div class="col-xs-12 col-sm-3 col-lg-2 linked-clas-list-first-col">
+    <div class="text clickable">
+      <repository-link *ngIf="item.getType() === 'repo'" [repo]="item.getCompleteObject()">
+      </repository-link>
+      <organization-link *ngIf="item.getType() === 'org'" [orgItem]="item.getCompleteObject()">
+      </organization-link>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-3 col-lg-2">
+    <div *ngIf="gistValid" class="text">
+      <a bind-href="gist.html_url" target="space">{{gist.fileName}}</a>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-lg-3 hidden-xs-down hidden-md-down hidden-lg-down text">
+    <a bind-href="gist.html_url" target="space">{{gist.url}}</a>
+  </div>
+
+  <div class="col-xs-12 col-sm-2 col-lg-2 text">
+    {{gist.updatedAt | date:'longDate'}}
+  </div>
+
+  <div class="col-xs-4 col-sm-2 col-lg-1 linked-clas-show-contrib-col">
+    <a (click)="repoModal.open()" class="clickable">{{numOfSignatures}}</a>
+  </div>
+  <report-modal #repoModal
+    [claItem]="item"
+    [gist]="gist">
+  </report-modal>
+
+  <status-indicator
+    [gistValid]="gistValid" 
+    [webhookValid]="webhookValid" 
+    class="col-xs-4 col-sm-1 col-lg-1 m-x-auto">
+  </status-indicator>
+
+  <div class="col-xs-4 col-sm-1 action" ng-init="popoverIsOpen=false">
+    <template #popoverContent>
+      <button class="btn btn-info" (click)="notImplemented();popover.close()" style="width:100%">Import</button>
+      <button class="btn btn-info" (click)="recheckPR();popover.close()" style="margin-top:5px; width:100%">Recheck PRs</button>
+      <button *ngIf="item.getType() == 'repo'" class="btn btn-info" (click)="getBadge();popover.close()" style="margin-top:5px; width:100%">Get Badge</button>
+    </template>
+    <get-badge-modal *ngIf="item.getType() == 'repo'" [repo]="item.getCompleteObject()"></get-badge-modal>
+    <i 
+      class="fa fa-ellipsis-h action-icon" 
+      [ngbPopover]="popoverContent"
+      #popover="ngbPopover"
+      triggers="manual"
+      (click)="popover.toggle()"
+      placement="right"></i>
+    <i class="fa fa-trash-o action-icon" style="font-size:18px" (click)="onUnlink.emit(item)" tooltip="Unlink" tooltipPlacement="bottom" ></i>
+  </div>
+</div>
